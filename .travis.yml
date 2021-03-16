@@ -4,7 +4,6 @@ dist: trusty
 
 env:
   global:
-   - echo yes | sdkmanager "build-tools;27.0.1"
 
 android:
   components:
@@ -24,6 +23,7 @@ before_install:
 
 before_script:
   - chmod +x gradlew
+  - yes | sudo sdkmanager --licenses
 
 #script:
 #  - ./gradlew clean build
