@@ -4,8 +4,7 @@ dist: trusty
 
 env:
   global:
-   - ANDROID_BUILD_TOOLS=27.0.2
-   - yes | sudo sdkmanager --licenses
+   - echo yes | sdkmanager "build-tools;27.0.1"
 
 android:
   components:
