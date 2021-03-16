@@ -4,6 +4,7 @@ dist: trusty
 
 env:
   global:
+   - ANDROID_BUILD_TOOLS=27.0.2
 
 android:
   components:
